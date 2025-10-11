@@ -36,7 +36,8 @@ cd Sundaram-portfolio
 
 ```
 Open index.html in your browser.
-##📞 Contact Me
+
+##  Contact Me
 
 I'm passionate about web development and always open to connecting with other developers or exploring new opportunities.
 
