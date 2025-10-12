@@ -1,11 +1,11 @@
 /* ---------- VARIABLES ---------- */
 :root {
-    --primary-color: #1abc9c;          /* Teal/Cyan for buttons */
-    --secondary-color: #34495e;        /* Dark Blue/Grey for nav & text */
-    --background-color: #ecf0f1;       /* Light grey background */
-    --card-background: #ffffff;        /* White cards */
-    --text-color: #2c3e50;             /* Dark slate for text */
-    --text-secondary: #7f8c8d;         /* Grey for subtitles */
+    --primary-color: #1abc9c;
+    --secondary-color: #34495e;
+    --background-color: #ecf0f1;
+    --card-background: #ffffff;
+    --text-color: #2c3e50;
+    --text-secondary: #7f8c8d;
     --font-poppins: 'Poppins', sans-serif;
 }
 
@@ -34,7 +34,7 @@ a {
 }
 
 a:hover {
-    color: darken(var(--primary-color), 10%);
+    color: #16a085;
 }
 
 /* ---------- HEADER ---------- */
@@ -118,7 +118,6 @@ a:hover {
 .subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    /* color: var(--text-secondary); */
     color: #000;
     text-align: left;
 }
@@ -139,7 +138,7 @@ a:hover {
 }
 
 .primary-btn:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: white;
 }
 
 .secondary-btn {
@@ -151,6 +150,13 @@ a:hover {
 .secondary-btn:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+/* ---------- HERO ACTIONS ---------- */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 /* ---------- SECTIONS ---------- */
@@ -358,7 +364,6 @@ a:hover {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
-    /* Hero */
     .hero-container {
         flex-direction: column;
         text-align: center;
@@ -378,13 +383,12 @@ a:hover {
         text-align: center;
     }
 
-    /* Hero Buttons */
     .hero-actions {
         flex-direction: column;
+        align-items: center;
         gap: 0.7rem;
     }
 
-    /* Header Nav */
     .nav {
         flex-direction: column;
     }
@@ -407,7 +411,6 @@ a:hover {
         white-space: nowrap;
     }
 
-    /* Coding Cards */
     .coding-cards {
         gap: 1rem;
     }
@@ -422,11 +425,10 @@ a:hover {
     }
 }
 
-/* Buttons - horizontal shrink for mobile only */
 @media (max-width: 768px) {
     .primary-btn,
     .secondary-btn {
-        padding: 0.75rem 1rem; /* vertical same, horizontal reduced */
+        padding: 0.75rem 1rem;
         font-size: 0.95rem;
     }
 }
@@ -434,7 +436,7 @@ a:hover {
 @media (max-width: 480px) {
     .primary-btn,
     .secondary-btn {
-        padding: 0.75rem 0.8rem; /* smaller screens */
+        padding: 0.75rem 0.8rem;
         font-size: 0.9rem;
     }
 }
